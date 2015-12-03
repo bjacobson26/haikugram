@@ -1,0 +1,12 @@
+%p#notice= notice
+%p
+  "#{@haiku.title}"
+%p
+  = @haiku.first_line
+%p
+  = @haiku.second_line
+%p
+  = @haiku.third_line
+= link_to 'Edit', edit_haiku_path(@haiku)
+|
+= link_to 'Back', haikus_path

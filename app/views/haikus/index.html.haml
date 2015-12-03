@@ -1,0 +1,30 @@
+%p#notice= notice
+%body.background-color
+  - if current_user
+    %div
+      = current_user.email 
+      = link_to 'Log out', destroy_user_session_path, method: :delete
+  %div
+    = link_to 'Sign up', new_user_registration_path unless current_user
+
+  %h1.text-center.logo-font.big-font.purple Haikugram
+  = link_to new_haiku_path, class: 'pure-button haiku-font button purple-background center', id: 'create_haiku_btn' do
+    %i.fa.fa-pencil
+  - @haikus.each do |haiku|
+    %h2.text-center.haiku-font.medium-font
+      = haiku.title
+    %p.text-center.haiku-font
+      = haiku.first_line
+    %p.text-center.haiku-font
+      = haiku.second_line
+    %p.text-center.haiku-font
+      = haiku.third_line
+    %div.center
+      %div.inline.text-center
+        //= link_to 'Show', haiku, class: 'pure-button haiku-font button purple-background'
+        - if (haiku && current_user) && haiku.user_id == current_user.id
+          = link_to 'Edit', edit_haiku_path(haiku), class: 'pure-button button haiku-font purple-background'
+          = link_to haiku, method: :delete, data: { confirm: 'Are you sure?' }, class: 'pure-button haiku-font button red-background' do
+            %i.fa.fa-trash-o
+  %br/
+  %br/

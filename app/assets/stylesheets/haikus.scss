@@ -1,0 +1,21 @@
+// Place all the styles related to the haikus controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+#create_haiku_btn { width: 20% }
+
+.text-center { text-align: center }
+.logo-font { font-family: 'Reenie Beanie', cursive; }
+.haiku-font { font-family: 'Kaushan Script', cursive; }
+.big-font { font-size: 120px }
+.purple { color: purple }
+.medium-font { font-size: 36px }
+.center { display: block; margin: auto; }
+.inline { display: block; margin-left:auto; margin-right: auto }
+.background-color { background-color: #F4F2E6 }
+// TODO get some cooler colors
+.purple-background:hover { background-color: purple }
+.red-background:hover { background-color: red }
+
+.debug-border { border: 5px solid red }
+.rounded-borders { border-radius: 5px }
+.button { border-radius: 5px }
