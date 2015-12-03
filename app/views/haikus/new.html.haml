@@ -1,3 +1,4 @@
-%h1 New Haiku
+%h1.haiku-font New Haiku
 = render 'form'
-= link_to 'Back', haikus_path
+= link_to haikus_path, class: 'pure-button button haiku-font' do
+  %i.fa.fa-arrow-left

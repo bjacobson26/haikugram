@@ -2,6 +2,8 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 #create_haiku_btn { width: 20% }
+#forgot_password { color:purple; text-decoration: none; }
+#forgot_password:hover { color: white; background-color: purple; }
 
 .text-center { text-align: center }
 .logo-font { font-family: 'Reenie Beanie', cursive; }
@@ -15,7 +17,7 @@
 // TODO get some cooler colors
 .purple-background:hover { background-color: purple }
 .red-background:hover { background-color: red }
-
+.white-hover:hover { color: white }
 .debug-border { border: 5px solid red }
 .rounded-borders { border-radius: 5px }
 .button { border-radius: 5px }

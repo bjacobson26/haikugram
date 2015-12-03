@@ -2,6 +2,8 @@ source 'https://rubygems.org'
 
 gem 'devise'
 
+gem "twitter-bootstrap-rails"
+
 gem "font-awesome-rails"
 
 gem "haml-rails", "~> 0.9"
